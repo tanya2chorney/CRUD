@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Management</title>
+  </head>
+  <body>
+    <h1>Movies Management</h1>
+
+    <button id="getMovies">Get Movies</button>
+    <form id="addMovieForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="genre" placeholder="Genre" required />
+      <input type="text" id="director" placeholder="Director" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Director</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="moviesTable"></tbody>
+    </table>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
